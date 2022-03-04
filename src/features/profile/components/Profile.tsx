@@ -2,8 +2,6 @@ import {
 	AddCommentOutlined,
 	DeleteOutlined,
 	FavoriteBorderOutlined,
-	FavoriteBorderSharp,
-	FavoriteBorderTwoTone,
 	FavoriteRounded,
 	Grid3x3,
 	Textsms,
