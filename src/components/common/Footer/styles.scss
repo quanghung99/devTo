@@ -1,0 +1,27 @@
+footer {
+  padding: 3rem;
+  background-color: rgb(229, 229, 229);
+  text-align: center;
+  color: rgb(64, 64, 64);
+  p {
+    text-align: inherit;
+    font-size: 0.875rem !important;
+    margin-top: 10px !important;
+
+    span {
+      color: rgb(59, 73, 233);
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  hr {
+    padding: 0;
+    margin: 0;
+    border-color: #e7ebf0;
+    border-width: 0;
+    border-style: solid;
+    border-bottom-width: thin;
+  }
+}

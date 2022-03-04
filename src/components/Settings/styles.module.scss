@@ -1,0 +1,135 @@
+.settingSection {
+  padding: 16px;
+  display: grid;
+  gap: 1rem;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  h4 {
+    text-align: left;
+    font-size: 1.875rem;
+    color: #090909;
+    min-height: 40px;
+    font-weight: bold;
+    grid-column: 1 / span2;
+    margin-bottom: 15px;
+    span {
+      margin-left: 0.25rem;
+      color: rgb(59, 73, 223);
+    }
+  }
+  .settingSection__leftSidebar {
+    ul {
+      list-style: none;
+      text-align: left;
+      margin: 0;
+      padding: 0;
+      color: #404040;
+      li {
+        padding: 0.5rem;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        cursor: pointer;
+        img {
+          width: 1.5rem;
+          height: 1.5rem;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+  .settingSection__connectBtn {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    color: rgb(23, 23, 23);
+    box-shadow: 0 0 0 1px rgba(23, 23, 23, 0.1);
+    overflow-wrap: anywhere;
+    display: flex;
+    flex-direction: column;
+    button {
+      display: flex;
+      justify-content: flex-start;
+      border-radius: 10px;
+      background-color: #1da1f2;
+      width: 40%;
+      color: white;
+      margin: 4px;
+      padding: 8px 16px 8px 12px;
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 0.5rem;
+        background-color: w;
+      }
+      &:nth-child(1) {
+        background-color: #0a4a3e;
+      }
+    }
+  }
+  .settingSection__saveBtn {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    color: rgb(23, 23, 23);
+    box-shadow: 0 0 0 1px rgba(23, 23, 23, 0.1);
+    overflow-wrap: anywhere;
+    display: flex;
+    flex-direction: column;
+    button {
+      display: flex;
+      justify-content: center;
+      border-radius: 10px;
+      background-color: rgb(59, 73, 223);
+      width: 100%;
+      color: white;
+      margin: 4px;
+      padding: 8px 16px 8px 16px;
+      text-align: center;
+      &:hover {
+        background-color: rgb(47, 58, 178);
+        border-color: transparent;
+        color: #f9f9f9;
+      }
+    }
+  }
+  .settingSection__formSetting {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    color: rgb(23, 23, 23);
+    box-shadow: 0 0 0 1px rgba(23, 23, 23, 0.1);
+    grid-gap: 1.5rem;
+    display: grid;
+    p {
+      text-align: left;
+      font-weight: bold;
+      font-size: 25px;
+    }
+    label {
+      text-align: left;
+      display: flex;
+      font-weight: bold;
+    }
+    .settingSection__profilePic {
+      display: flex;
+      align-items: center;
+      img {
+        border-radius: 100%;
+        width: 3rem;
+        height: 3rem;
+        display: inline-block;
+        vertical-align: bottom;
+        margin-right: 0.5rem;
+        margin-top: 8px;
+      }
+      input {
+        border: none;
+        padding: 10px 14px;
+      }
+    }
+  }
+}

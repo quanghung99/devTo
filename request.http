@@ -1,0 +1,73 @@
+POST https://api.realworld.io/api/users
+Content-Type: application/json
+
+{
+    "user": {
+        "username": "quanghoa",
+        "email": "quanghoa@gmai.com",
+        "password": "quanghoa"
+    } 
+}
+
+###
+POST https://api.realworld.io/api/users/login
+Content-Type: application/json
+
+{
+    "user": {
+        "email": "quanghoa@gmai.com",
+        "password": "quanghoa"
+    }
+}
+
+###
+GET https://api.realworld.io/api/user
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InF1YW5naG9hQGdtYWkuY29tIiwidXNlcm5hbWUiOiJxdWFuZ2hvYSIsInBhc3N3b3JkIjoiJDJhJDEwJEJVUi9WQVNlR1B6bjJ1b1hrZy9LNS5RTlhWUDAxSHoxWUgybG42V0cySkNIbTJ3MkFPV0JtIiwiYmlvIjpudWxsLCJpbWFnZSI6Imh0dHBzOi8vYXBpLnJlYWx3b3JsZC5pby9pbWFnZXMvc21pbGV5LWN5cnVzLmpwZWciLCJpYXQiOjE2NDYwMTk2NTAsImV4cCI6MTY1MTIwMzY1MH0.NrQ3BENPcZrQgczFLvWdF8VPspelYAQAS9fkQ9vfF3Q
+
+###
+PUT  https://api.realworld.io/api/user
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InF1YW5naG9hQGdtYWkuY29tIiwidXNlcm5hbWUiOiJxdWFuZ2hvYSIsImJpbyI6bnVsbCwiaW1hZ2UiOiJodHRwczovL2FwaS5yZWFsd29ybGQuaW8vaW1hZ2VzL3NtaWxleS1jeXJ1cy5qcGVnIiwiaWF0IjoxNjQ2MDE5OTE0LCJleHAiOjE2NTEyMDM5MTR9.ZoQK_t2tKKkIBTIs2eShlBLMe3-sA_3d6Q9BkUYwzxk
+
+
+{
+    "user": {
+        "email": "quanghoa@gmai.com",
+        "bio": "no null",
+        "password": "quanghoa"
+    }
+}
+
+###
+GET https://api.realworld.io/api/articles/feed
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InF1YW5naG9hQGdtYWkuY29tIiwidXNlcm5hbWUiOiJxdWFuZ2hvYSIsInBhc3N3b3JkIjoiJDJhJDEwJEJVUi9WQVNlR1B6bjJ1b1hrZy9LNS5RTlhWUDAxSHoxWUgybG42V0cySkNIbTJ3MkFPV0JtIiwiYmlvIjpudWxsLCJpbWFnZSI6Imh0dHBzOi8vYXBpLnJlYWx3b3JsZC5pby9pbWFnZXMvc21pbGV5LWN5cnVzLmpwZWciLCJpYXQiOjE2NDYwMTk2NTAsImV4cCI6MTY1MTIwMzY1MH0.NrQ3BENPcZrQgczFLvWdF8VPspelYAQAS9fkQ9vfF3Q
+
+###
+GET https://api.realworld.io/api/profiles/quanghoa
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InF1YW5naG9hQGdtYWkuY29tIiwidXNlcm5hbWUiOiJxdWFuZ2hvYSIsInBhc3N3b3JkIjoiJDJhJDEwJEJVUi9WQVNlR1B6bjJ1b1hrZy9LNS5RTlhWUDAxSHoxWUgybG42V0cySkNIbTJ3MkFPV0JtIiwiYmlvIjpudWxsLCJpbWFnZSI6Imh0dHBzOi8vYXBpLnJlYWx3b3JsZC5pby9pbWFnZXMvc21pbGV5LWN5cnVzLmpwZWciLCJpYXQiOjE2NDYwMTk2NTAsImV4cCI6MTY1MTIwMzY1MH0.NrQ3BENPcZrQgczFLvWdF8VPspelYAQAS9fkQ9vfF3Q
+###
+POST  https://api.realworld.io/api/profiles/quanghoa/follow
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InF1YW5naG9hQGdtYWkuY29tIiwidXNlcm5hbWUiOiJxdWFuZ2hvYSIsInBhc3N3b3JkIjoiJDJhJDEwJEJVUi9WQVNlR1B6bjJ1b1hrZy9LNS5RTlhWUDAxSHoxWUgybG42V0cySkNIbTJ3MkFPV0JtIiwiYmlvIjpudWxsLCJpbWFnZSI6Imh0dHBzOi8vYXBpLnJlYWx3b3JsZC5pby9pbWFnZXMvc21pbGV5LWN5cnVzLmpwZWciLCJpYXQiOjE2NDYwMTk2NTAsImV4cCI6MTY1MTIwMzY1MH0.NrQ3BENPcZrQgczFLvWdF8VPspelYAQAS9fkQ9vfF3Q
+###
+DELETE   https://api.realworld.io/api/profiles/quanghoa/follow
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InF1YW5naG9hQGdtYWkuY29tIiwidXNlcm5hbWUiOiJxdWFuZ2hvYSIsInBhc3N3b3JkIjoiJDJhJDEwJEJVUi9WQVNlR1B6bjJ1b1hrZy9LNS5RTlhWUDAxSHoxWUgybG42V0cySkNIbTJ3MkFPV0JtIiwiYmlvIjpudWxsLCJpbWFnZSI6Imh0dHBzOi8vYXBpLnJlYWx3b3JsZC5pby9pbWFnZXMvc21pbGV5LWN5cnVzLmpwZWciLCJpYXQiOjE2NDYwMTk2NTAsImV4cCI6MTY1MTIwMzY1MH0.NrQ3BENPcZrQgczFLvWdF8VPspelYAQAS9fkQ9vfF3Q
+
+###
+GET https://api.realworld.io/api/articles
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InF1YW5naG9hQGdtYWkuY29tIiwidXNlcm5hbWUiOiJxdWFuZ2hvYSIsInBhc3N3b3JkIjoiJDJhJDEwJEJVUi9WQVNlR1B6bjJ1b1hrZy9LNS5RTlhWUDAxSHoxWUgybG42V0cySkNIbTJ3MkFPV0JtIiwiYmlvIjpudWxsLCJpbWFnZSI6Imh0dHBzOi8vYXBpLnJlYWx3b3JsZC5pby9pbWFnZXMvc21pbGV5LWN5cnVzLmpwZWciLCJpYXQiOjE2NDYwMTk2NTAsImV4cCI6MTY1MTIwMzY1MH0.NrQ3BENPcZrQgczFLvWdF8VPspelYAQAS9fkQ9vfF3Q
+
+
+###
+POST  https://api.realworld.io/api/articles
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InF1YW5naG9hQGdtYWkuY29tIiwidXNlcm5hbWUiOiJxdWFuZ2hvYSIsInBhc3N3b3JkIjoiJDJhJDEwJEJVUi9WQVNlR1B6bjJ1b1hrZy9LNS5RTlhWUDAxSHoxWUgybG42V0cySkNIbTJ3MkFPV0JtIiwiYmlvIjpudWxsLCJpbWFnZSI6Imh0dHBzOi8vYXBpLnJlYWx3b3JsZC5pby9pbWFnZXMvc21pbGV5LWN5cnVzLmpwZWciLCJpYXQiOjE2NDYwMTk2NTAsImV4cCI6MTY1MTIwMzY1MH0.NrQ3BENPcZrQgczFLvWdF8VPspelYAQAS9fkQ9vfF3Q
+
+{
+    
+}
